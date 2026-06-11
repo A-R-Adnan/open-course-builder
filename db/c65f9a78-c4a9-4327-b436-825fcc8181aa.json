@@ -1,0 +1,70 @@
+{
+  "id": "c65f9a78-c4a9-4327-b436-825fcc8181aa",
+  "title": "Competitive Programming",
+  "description": "Level-1, for beginner",
+  "createdAt": "2026-06-11T15:23:18.837Z",
+  "updatedAt": "2026-06-11T15:33:07.482Z",
+  "lessons": [
+    {
+      "id": "b0c8d701-8d9c-46f3-b9ef-041576e1ee6d",
+      "title": "Hello World",
+      "type": "link",
+      "resource": "https://www.w3schools.com/cpp/cpp_output.asp",
+      "notes": "",
+      "lessonNote": "# C++ basic\n- cout\n- endl\n```C\n#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  cout << \"I am learning C++\";\n  return 0;\n}\n```\n",
+      "isCompleted": true,
+      "completeDate": "2026-06-11T15:27:42.439Z",
+      "createdAt": "2026-06-11T15:24:41.424Z"
+    }
+  ],
+  "authors": [
+    {
+      "authorName": "A_R_Adnan",
+      "authorLink": "https://www.linkedin.com/in/abdur-rahman-adnan-347470328/"
+    }
+  ],
+  "tags": [
+    "CP",
+    "C",
+    "C++",
+    "CPP"
+  ],
+  "courseLanguage": [
+    "English"
+  ],
+  "tasks": [
+    {
+      "id": "7abec007-8525-4628-a854-cfbf81c30003",
+      "title": "Your First Problem",
+      "question": "# A. Hello, World!\n\n## Problem\n\nYour task is to print the text:\n\n```\nHello, World!\n```\n\nexactly as shown above.\n\n## Input\n\nThere is no input.\n\n## Output\n\nPrint the following line:\n\n```\nHello, World!\n```\n\n## Example\n\n### Output\n\n```\nHello, World!\n```\n\n## Notes\n\n- The output is case-sensitive.\n- Do not print any extra spaces or additional lines.",
+      "instruction": "# LLM Judge Instruction\n\nYou are an automated judge for a programming contest.\n\nGiven:\n1. The problem statement.\n2. The contestant's source code.\n3. The program's actual output.\n\nYour task is to determine the verdict.\n\n## Evaluation Rules\n\nFor this problem, the expected output is exactly:\n\nHello, World!\n\n### Accepted (AC)\n\nReturn AC if:\n- The output consists of exactly one line.\n- The line is exactly:\n  Hello, World!\n- Ignore a single trailing newline at the end of the output.\n\n### Wrong Answer (WA)\n\nReturn WA if:\n- Any character differs.\n- There are extra spaces.\n- There are extra lines.\n- The capitalization differs.\n- Punctuation differs.\n\n## Response Format\n\nReturn only a JSON object:\n\n```json\n{\n  \"verdict\": \"AC\"\n}\n```\n\nor\n\n```json\n{\n  \"verdict\": \"WA\",\n  \"reason\": \"Expected 'Hello, World!' but found 'Hello World'\"\n}\n```\n\nDo not include any additional text outside the JSON.",
+      "createdAt": "2026-06-11T15:29:49.174Z",
+      "submissions": [
+        {
+          "id": "46550d04-1113-421c-b9f4-df9bc7d76896",
+          "answer": "#include<bits/stdc++.h>\nusing namespace std;\nint main()\n{\n cout<<\"Hello, World!\"<<endl;\nreturn 0;\n}",
+          "createdAt": "2026-06-11T15:31:57.588Z",
+          "feedback": "```json\n{\n  \"verdict\": \"AC\"\n}\n```"
+        },
+        {
+          "id": "0430f842-c514-4690-95d2-4029b4a063aa",
+          "answer": "#include<bits/stdc++.h>\nusing namespace std;\nint main()\n{\n cout<<\"HelloWorld!\"<<endl;\nreturn 0;\n}",
+          "createdAt": "2026-06-11T15:32:31.592Z",
+          "feedback": "```json\n{\n  \"verdict\": \"WA\",\n  \"reason\": \"Expected 'Hello, World!' but found 'HelloWorld!'\"\n}\n```"
+        },
+        {
+          "id": "f57c882d-cdac-451b-ab2c-9906fb133727",
+          "answer": "#include<bits/stdc++.h>\nusing namespace std;\nint main()\n{\n cout<<\"Hello, World!\"<<endl;\nreturn",
+          "createdAt": "2026-06-11T15:32:57.298Z",
+          "feedback": "```json\n{\n  \"verdict\": \"AC\"\n}\n```"
+        },
+        {
+          "id": "635e692d-908a-4e01-8063-eb3537cd957f",
+          "answer": "#include<bits/stdc++.h>\nusing namespace std;\nint main()\n{\n cout<<\"Hello, World!\"<<endl;\nreturn",
+          "createdAt": "2026-06-11T15:33:07.228Z",
+          "feedback": "```json\n{\n  \"verdict\": \"WA\",\n  \"reason\": \"Expected 'Hello, World!' but found 'Hello, World!\\n' due to extra newline\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}
